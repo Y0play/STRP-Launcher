@@ -1,6 +1,6 @@
 /**
  * @author Luuxis
- * Luuxis License v1.0 (voir fichier LICENSE pour les détails en FR/EN)
+ * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
  */
 import { config, database, logger, changePanel, appdata, setStatus, pkg, popup } from '../utils.js'
 
@@ -230,12 +230,7 @@ class Home {
 
             ignored: [...options.ignored],
 
-            java: {
-                path: configClient.java_config.java_path,
-            },
-
-            JVM_ARGS:  options.jvm_args ? options.jvm_args : [],
-            GAME_ARGS: options.game_args ? options.game_args : [],
+            javaPath: configClient.java_config.java_path,
 
             screen: {
                 width: configClient.game_config.screen_size.width,
