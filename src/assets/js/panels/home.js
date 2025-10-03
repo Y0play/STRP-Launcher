@@ -226,6 +226,8 @@ class Home {
                 enable: options.loadder.loadder_type == 'none' ? false : true
             },
 
+            JVM_ARGS: [...this.config.JVM_ARGS],
+            GAME_ARGS: [...this.config.GAME_ARGS],
             verify: options.verify,
 
             ignored: [...options.ignored],
